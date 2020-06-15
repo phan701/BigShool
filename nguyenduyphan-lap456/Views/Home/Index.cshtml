@@ -1,6 +1,20 @@
-﻿@{
+﻿@model IEnumerable<nguyenduyphan_lap456.Models.Course>
+@}
     ViewBag.Title = "Home Page";
 }
+<div class="row">
+    <ul>
+        @foreach (var course in Model)
+        {
+     
+                <li>
+                    @course.DateTime-@course.lecturer.UserName
+               </li>
+           
+                   
+         }
+        </ul>
+    </div>
 
 <div class="jumbotron">
     <h1>ASP.NET</h1>
